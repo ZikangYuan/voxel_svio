@@ -18,7 +18,9 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 > 
 > [Eigen3](http://eigen.tuxfamily.org/index.php?title=Main_Page) >= 3.3.4
 >
-> [OpenCV](https://github.com/opencv/opencv) == 4.2.0
+> [OpenCV](https://github.com/opencv/opencv) == 4.2.0 for Ubuntu 20.04
+> 
+> [PCL](https://pointclouds.org/downloads/) == 1.10 for Ubuntu 20.04
 >
 > [Ceres](http://ceres-solver.org/installation.html) >= 1.14
 >
@@ -26,9 +28,9 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 
 ##### Have Tested On:
 
-| OS    | GCC  | Cmake | Eigen3 | OpenCV | Ceres |
-|:-:|:-:|:-:|:-:|:-:|:-:|
-| Ubuntu 20.04 | 9.4.0  | 3.16.3 | 3.3.7 | 4.2.0 | 1.14 |
+| OS    | GCC  | Cmake | Eigen3 | OpenCV | PCL | Ceres |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Ubuntu 20.04 | 9.4.0  | 3.16.3 | 3.3.7 | 4.2.0 | 1.10.0 | 1.14 |
 
 ### 2. Create ROS workspace
 
