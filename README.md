@@ -115,6 +115,22 @@ rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 
 For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, please use **kaist.yaml**.
 
+## Citation
+
+If you use our work in your research project, please consider citing:
+
+```
+@article{yuan2025voxel,
+  author={Yuan, Zikang and Lang, Fengtian and Deng, Jie and Luo, Hongcheng and Yang, Xin},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={}
+}
+```
+
 ## Acknowledgments
 
 Thanks for [Open-VINs](https://github.com/rpng/open_vins), [DSO](https://github.com/JakobEngel/dso) and [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
