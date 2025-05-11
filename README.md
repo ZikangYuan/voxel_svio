@@ -10,7 +10,7 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 
 ## Demo Video (2025-05-11 Update)
 
-The **x3 Real-Time Performance** on the sequence *MH_02_easy* of [*EuRoC_MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets).
+The **x3 Real-Time Performance** on the sequence *MH_02_easy* of [*EuRoC_MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets). The map points in green voxels are feded into the estimator for MSCKF-based state update.
 
 <div align="left">
 <img src="doc/running_part2.gif" width=100.0% />
