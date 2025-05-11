@@ -13,7 +13,7 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 The **x3 Real-Time Performance** on the sequence *MH_02_easy* of [*EuRoC_MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets).
 
 <div align="left">
-<img src="doc/demo.gif" width=100.0% />
+<img src="doc/run.gif" width=100.0% />
 </div>
 
 ## Installation
