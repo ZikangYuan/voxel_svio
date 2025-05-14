@@ -153,4 +153,8 @@ For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urba
 
 ## 🤓 Acknowledgments
 
-Thanks for [Open-VINs](https://github.com/rpng/open_vins), [DSO](https://github.com/JakobEngel/dso) and [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
+We would like to express our gratitude to the following projects, which have provided significant support and inspiration for our work:
+- [Open-VINs](https://github.com/rpng/open_vins): An open source platform for visual-inertial navigation research, the implementation of our MSCKF is based on it.
+- [DSO](https://github.com/JakobEngel/dso): A monocular direct sparse visual odometry, our feature extraction and matching is inspired from it.
+- [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono): A robust and versatile monocular visual-inertial state estimator, our keyframe selection and marginalization is based on it.
+- [EPIC](https://github.com/SYSU-STAR/EPIC): A lightweight LiDAR-based UAV exploration framework for large-scale scenarios, our visualization module is mainly implemented by referring to it.
