@@ -26,7 +26,7 @@
 ## 💡 News
 * **[2025.05.08]** **Voxel-SVIO** can be early accessed in IEEE Xplore ! 
 * **[2025.04.30]** The source code of **Voxel-SVIO** is released !
-* **[2025.04.21]** **Voxel-SVIO** is accepted by RAL 2025 **without revision** 🚀 !
+* **[2025.04.21]** **Voxel-SVIO** is accepted by RA-L 2025 **without revision** 🚀 !
 
 ## 📜 Introduction
 
