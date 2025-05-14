@@ -1,22 +1,58 @@
-# Voxel-SVIO
+<div align = "center">
+  <h1>
+    Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map
+  </h1>
+</div>
+<div align = "center">
+  <h2>
+    A MSCKF based stereo visual-inertial odometry that utilizes voxel-based map management
+  </h2>
+</div>
+<div align="center">
+  <strong>
+        Zikang Yuan,
+        Fengtian Lang,
+        Jie Deng,
+        Hongcheng Luo, and
+        Xin Yang<sup>†</sup>
+  </strong>
+  <p>
+    <sup>†</sup>Corresponding Author
+  </p>
+  <a href="https://ieeexplore.ieee.org/abstract/document/10993347"><img src="https://img.shields.io/badge/Paper-IEEE RAL-004088.svg"/></a>
+  <a href='https://www.youtube.com/watch?v=i085OQ0ESJ8'><img alt="Video" src="https://img.shields.io/badge/YouTube-Video-red"/></a>
+</div>
 
-**Voxel-SVIO** (Stereo Visual-Inertial Odometry based on Voxel Map) is a MSCKF based visual-inertial odometry (VIO) that utilizes voxel-based map management. The voxel-based map management enables VIO systems to efficiently retrieve the most suitable points for optimizer inclusion, thereby ensuring optimal allocation of computational resources to the variables most critical for optimization.
+## 💡 News
+* **[2025.05.08]** **Voxel-SVIO** can be early in IEEE Xplore ! 
+* **[2025.04.30]** The source code of **Voxel-SVIO** is released !
+* **[2025.04.21]** **Voxel-SVIO** is accepted by RAL 2025 **without revision** 🚀 !
 
-## Related Work
+## 📜 Introduction
 
-[Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map](https://ieeexplore.ieee.org/document/10993347)
-
-Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxdM9gAAAAJ), [*Fengtian Lang*](https://scholar.google.com/citations?hl=zh-CN&user=zwgGSkEAAAAJ&view_op=list_works&gmla=ABEO0Yrl4-YPuowyntSYyCW760yxM5-IWkF8FGV4t9bs9qz1oWrqnlHmPdbt7LMcMDc04kl2puqRR4FaZvaCUONsX7MQhuAC6a--VS2pTsuwj-CyKgWp3iWDP2TS0I__Zui5da4), *Jie Deng*, *Hongcheng Luo* and [*Xin Yang*](https://scholar.google.com/citations?user=lsz8OOYAAAAJ&hl=zh-CN)
-
-## Demo Video (2025-05-11 Update)
-
-The **x3 Real-Time Performance** on the sequence *MH_02_easy* of [*EuRoC_MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets). The map points in green voxels are feded into the estimator for MSCKF-based state update. Please refer to [**YouTube**](https://youtu.be/i085OQ0ESJ8) for smoother video playback.
+**Voxel-SVIO** enables VIO systems to efficiently retrieve the most suitable points for optimizer inclusion, thereby ensuring optimal allocation of computational resources to the variables most critical for optimization. The map points in green voxels are feded into the estimator for MSCKF-based state update. Please refer to [**YouTube**](https://youtu.be/i085OQ0ESJ8) for smoother video playback.
 
 <div align="left">
 <img src="doc/demo_MH_02.gif" width=100.0% />
 </div>
 
-## Installation
+Please cite our paper if you use this project in your research:
+
+```
+@article{yuan2025voxel,
+  author={Yuan, Zikang and Lang, Fengtian and Deng, Jie and Luo, Hongcheng and Yang, Xin},
+  journal={IEEE Robotics and Automation Letters}, 
+  title={Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={}
+}
+```
+
+Please kindly star ⭐️ this project if it helps you. We take great efforts to develop and maintain it 😁.
+
+## 🛠️ Installation
 
 ### 1. Requirements
 
@@ -55,7 +91,7 @@ cd ..
 catkin_make
 ```
 
-## Run on Public Datasets
+## 🚀 Run on Public Datasets
 
 Noted:
 
@@ -115,22 +151,6 @@ rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 
 For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, please use **kaist.yaml**.
 
-## Citation
-
-If you use our work in your research project, please consider citing:
-
-```
-@article{yuan2025voxel,
-  author={Yuan, Zikang and Lang, Fengtian and Deng, Jie and Luo, Hongcheng and Yang, Xin},
-  journal={IEEE Robotics and Automation Letters}, 
-  title={Voxel-SVIO: Stereo Visual-Inertial Odometry based on Voxel Map}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={}
-}
-```
-
-## Acknowledgments
+## 🤓 Acknowledgments
 
 Thanks for [Open-VINs](https://github.com/rpng/open_vins), [DSO](https://github.com/JakobEngel/dso) and [VINs-Mono](https://github.com/HKUST-Aerial-Robotics/VINS-Mono).
