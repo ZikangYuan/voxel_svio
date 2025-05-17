@@ -10,8 +10,8 @@
 </div>
 <div align="center">
   <strong>
-        [Zikang Yuan](https://scholar.google.com/citations?user=acxdM9gAAAAJ&hl=zh-CN),
-        [Fengtian Lang](https://scholar.google.com/citations?user=zwgGSkEAAAAJ&hl=zh-CN),
+        Zikang Yuan,
+        Fengtian Lang,
         Jie Deng<sup>*</sup>,
         Hongcheng Luo, and
         Xin Yang<sup>†</sup>
