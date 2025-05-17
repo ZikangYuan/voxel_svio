@@ -11,9 +11,9 @@
 <div align="center">
   <strong>
         Zikang Yuan,
-        Fengtian Lang,
+        Fengtian Lang<sup>*</sup>,
         Jie Deng<sup>*</sup>,
-        Hongcheng Luo, and
+        Hongcheng Luo<sup>*</sup>, and
         Xin Yang<sup>†</sup>
   </strong>
   <p>
