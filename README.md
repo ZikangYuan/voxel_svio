@@ -12,12 +12,11 @@
   <strong>
         Zikang Yuan,
         Fengtian Lang,
-        Jie Deng<sup>*</sup>,
+        Jie Deng,
         Hongcheng Luo, and
         Xin Yang<sup>†</sup>
   </strong>
   <p>
-    <sup>*</sup>Foolish Author
     <sup>†</sup>Corresponding Author
   </p>
   <a href="https://ieeexplore.ieee.org/abstract/document/10993347"><img src="https://img.shields.io/badge/Paper-IEEE RAL-004088.svg"/></a>
