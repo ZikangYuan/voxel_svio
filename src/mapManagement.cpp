@@ -42,6 +42,10 @@ bool mapManagement::addPointToVoxel(voxelHashMap &voxel_map, std::shared_ptr<map
 				return false;
 			}
 		}
+		else
+		{
+			return false;
+		}
 	}
 	else
 	{
