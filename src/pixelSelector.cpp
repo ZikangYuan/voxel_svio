@@ -144,7 +144,8 @@ int pixelSelector::pixelSelectionLeft(std::shared_ptr<frame> fh, float density, 
 	float quotia;
 	int ideal_potential = current_potential;
 
-	if(fh != grad_hist_frame) makeHistsLeft(fh);
+	// if(fh != grad_hist_frame) makeHistsLeft(fh);
+	makeHistsLeft(fh);
 
 	Eigen::Vector3i n = this->selectLeft(fh, current_potential, th_factor);
 
@@ -486,7 +487,8 @@ int pixelSelector::pixelSelectionRight(std::shared_ptr<frame> fh, float density,
 	float quotia;
 	int ideal_potential = current_potential;
 
-	if(fh != grad_hist_frame) makeHistsRight(fh);
+	// if(fh != grad_hist_frame) makeHistsRight(fh);
+	makeHistsRight(fh);
 
 	Eigen::Vector3i n = this->selectRight(fh, current_potential, th_factor);
 
