@@ -881,7 +881,7 @@ void voxelStereoVio::getRecentVoxel(double timestamp, pcl::PointCloud<pcl::Point
     
                             point_temp.x = kxx >= 0 ? (kxx + 0.5) * odometry_options.voxel_size : (kxx - 0.5) * odometry_options.voxel_size;
                             point_temp.y = kyy >= 0 ? (kyy + 0.5) * odometry_options.voxel_size : (kyy - 0.5) * odometry_options.voxel_size;
-                            point_temp.z = kzz >= 0 ? (kyy + 0.5) * odometry_options.voxel_size : (kzz - 0.5) * odometry_options.voxel_size;
+                            point_temp.z = kzz >= 0 ? (kzz + 0.5) * odometry_options.voxel_size : (kzz - 0.5) * odometry_options.voxel_size;
                             point_temp.intensity = 1;
 
                             voxels_visit->points.push_back(point_temp);
