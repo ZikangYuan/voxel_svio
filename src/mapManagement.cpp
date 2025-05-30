@@ -122,7 +122,7 @@ void mapManagement::changeHostVoxel(voxelHashMap &voxel_map, std::shared_ptr<map
 
         point_temp.x = kx >= 0 ? (kx + 0.5) * voxel_size : (kx - 0.5) * voxel_size;
         point_temp.y = ky >= 0 ? (ky + 0.5) * voxel_size : (ky - 0.5) * voxel_size;
-        point_temp.z = kz >= 0 ? (ky + 0.5) * voxel_size : (kz - 0.5) * voxel_size;
+        point_temp.z = kz >= 0 ? (kz + 0.5) * voxel_size : (kz - 0.5) * voxel_size;
         point_temp.intensity = 1;
 
         voxels_history->points.push_back(point_temp);
