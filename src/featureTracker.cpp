@@ -99,6 +99,8 @@ void trackKLT::feedStereo(const cameraData &image_measurements, std::shared_ptr<
     std::vector<cv::KeyPoint> good_left, good_right;
     std::vector<size_t> good_ids_left, good_ids_right;
     performDetectionStereo(fh, img_pyr_left, img_pyr_right, mask_left, mask_right, cam_id_left, cam_id_right, good_left, good_right, good_ids_left, good_ids_right);
+
+    fh_last = fh;
     
     img_last[cam_id_left] = img_left;
     img_last[cam_id_right] = img_right;
@@ -119,8 +121,10 @@ void trackKLT::feedStereo(const cameraData &image_measurements, std::shared_ptr<
   auto pts_right_old = pts_last[cam_id_right];
   auto ids_left_old = ids_last[cam_id_left];
   auto ids_right_old = ids_last[cam_id_right];
-  performDetectionStereo(fh, img_pyramid_last[cam_id_left], img_pyramid_last[cam_id_right], img_mask_last[cam_id_left],
+  performDetectionStereo(fh_last, img_pyramid_last[cam_id_left], img_pyramid_last[cam_id_right], img_mask_last[cam_id_left],
     img_mask_last[cam_id_right], cam_id_left, cam_id_right, pts_left_old, pts_right_old, ids_left_old, ids_right_old);
+
+  fh_last = fh;
 
   rT3 = boost::posix_time::microsec_clock::local_time();
 
