@@ -84,5 +84,7 @@ private:
 	std::map<size_t, cv::Mat> img_curr;
 	std::map<size_t, std::vector<cv::Mat>> img_pyramid_curr;
 
+	std::shared_ptr<frame> fh_last;
+
 	boost::posix_time::ptime rT1, rT2, rT3, rT4, rT5, rT6, rT7;
 };
