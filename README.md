@@ -98,7 +98,7 @@ Noted:
 
 A. **Please create a folder named "output" before running.** When **Voxel-SVIO** is running, the estimated pose is recorded in real time in the **pose.txt** located in the **output folder**.
 
-B. We store the public datasets on Baidu drive. Chinese users can download the rosbag data of [*TUM_VI*](https://pan.baidu.com/s/1WLhnyq09KMpG4J4McT841Q?pwd=8pen) and [*KAIST*](https://pan.baidu.com/s/1KHkGmQ7nH5Une3VNerLyHQ?pwd=ss9a).
+B. We store the public datasets on Baidu drive. Chinese users can download the rosbag data of [*TUM_VI*](https://pan.baidu.com/s/1WLhnyq09KMpG4J4McT841Q?pwd=8pen) and [*KAIST*](https://pan.baidu.com/s/1WbSTec2_EnA7R99Xxw8Ckw?pwd=rirm).
 
 ###  1. Run on [*EuRoC_MAV*](https://projects.asl.ethz.ch/datasets/doku.php?id=kmavvisualinertialdatasets)
 
