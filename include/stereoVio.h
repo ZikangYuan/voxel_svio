@@ -120,6 +120,7 @@ private:
 
     double active_tracks_time = -1;
     std::unordered_map<size_t, Eigen::Vector3d> active_tracks_pos_world; // active_tracks_posinG
+    std::unordered_map<size_t, Eigen::Vector3d> active_tracks_pos_world_new;
     std::unordered_map<size_t, Eigen::Vector3d> active_tracks_uvd;
     cv::Mat active_image;
     std::map<size_t, Eigen::Matrix3d> active_feat_linsys_A;
