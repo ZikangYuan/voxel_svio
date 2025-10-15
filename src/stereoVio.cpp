@@ -644,6 +644,7 @@ void voxelStereoVio::triangulateActiveTracks(cameraData &image_measurements)
     // draw
 
     active_tracks_pos_world.clear();
+    active_tracks_pos_world_new.clear();
     active_tracks_uvd.clear();
 
     auto last_obs = featureTracker->getLastObs();
@@ -652,7 +653,6 @@ void voxelStereoVio::triangulateActiveTracks(cameraData &image_measurements)
     std::map<size_t, Eigen::Matrix3d> active_feat_linsys_A_new;
     std::map<size_t, Eigen::Vector3d> active_feat_linsys_b_new;
     std::map<size_t, int> active_feat_linsys_count_new;
-    std::unordered_map<size_t, Eigen::Vector3d> active_tracks_pos_world_new;
 
     std::map<size_t, cv::Point2f> feat_uvs_in_cam_0;
 
@@ -847,7 +847,7 @@ void voxelStereoVio::getRecentVoxel(double timestamp, pcl::PointCloud<pcl::Point
     voxels_visit->clear();
     // display
 
-    for (const auto &point : active_tracks_pos_world)
+    for (const auto &point : active_tracks_pos_world_new)
     {
         short kx = static_cast<short>(point.second[0] / odometry_options.voxel_size);
         short ky = static_cast<short>(point.second[1] / odometry_options.voxel_size);
