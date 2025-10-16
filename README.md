@@ -152,6 +152,10 @@ rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 
 For the KAIST dataset, the extrinsic parameters of sequences *urban38* and *urban39* differ from other sequences. When processing *urban38* or *urban39*, please use **kaist2.yaml**; for all other sequences, please use **kaist.yaml**.
 
+## ⚠️ Memory Explosion with RViz
+
+* Enabling RViz visualization can lead to a rapid increase in memory consumption, as it accumulates and renders voxel and point cloud data. This issue is particularly severe with large-scale datasets like KAIST. We highly recommend **disabling RViz when running on KAIST** to avoid excessive memory usage.
+
 ## 🤓 Acknowledgments
 
 We would like to express our gratitude to the following projects, which have provided significant support and inspiration for our work:
